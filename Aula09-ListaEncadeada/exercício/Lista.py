@@ -9,6 +9,7 @@ class Lista:
         nodo = No(valor)
         if self.inicio == None:
             self.inicio = nodo
+            self.fim = nodo
         else:
             if nodo.dado < self.inicio.dado:
                 nodo.proximo = self.inicio
